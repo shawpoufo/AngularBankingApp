@@ -1,0 +1,22 @@
+<div class="container">
+    <!-- <div>{{customerId}}</div> -->
+    <div>
+        <b>Intitulé</b> : 
+        {{customer.name}}
+    </div>
+    <!-- <div>{{customer.email}}</div> -->
+    <table class="table">
+        <thead>
+        <tr>
+          <th>ID</th><th>Type</th><th>Balance</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let b of bankAccounts">
+          <td>{{b.id}}</td>
+          <td>{{b.type}}</td>
+          <td>{{b.balance}}</td>
+        </tr>
+        </tbody>
+      </table>
+</div>
